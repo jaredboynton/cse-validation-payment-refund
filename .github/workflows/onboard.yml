@@ -11,7 +11,6 @@ on:
 permissions:
   actions: write
   contents: write
-  variables: write
 
 jobs:
   onboard:
@@ -30,3 +29,4 @@ jobs:
           postman-api-key: ${{ secrets.POSTMAN_API_KEY }}
           postman-access-token: ${{ secrets.POSTMAN_ACCESS_TOKEN }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
+          gh-fallback-token: ${{ secrets.GH_FALLBACK_TOKEN }}
